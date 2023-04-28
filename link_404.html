@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>link_404</title>
+    <style>
+         .page_404 { display: flex; align-items: center; justify-content: center; padding: 40px 0; background: #fff; font-family: 'arvo', serif; height: 100vh; }
+         .four_zero_four_bg {background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif); height: 400px;   background-position: center; background-size: cover;}
+         .four_zero_four_bg h1,
+         .four_zero_four_bg h3 {font-size: 80px;color: #fff;margin: 0;}
+         .contant_box_404 {margin-top: -50px;text-align: center;}
+         .link_404 { color: #fff!important; padding: 10px 20px; background: #39ac31; margin: 20px 0; display: inline-block; text-decoration: none; font-size: 18px;font-weight: bold;border-radius: 5px;}
+
+
+         .modal {display: none;position: fixed;z-index: 1;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgba(0,0,0,0.4);}
+         .modal-content {background-color: #fefefe;margin: 15% auto;padding: 20px;border: 1px solid #888;width: 80%;}
+         .close { color: #aaa; float: right; font-size: 28px; font-weight: bold;}
+         .close:hover,
+         .close:focus {color: black;text-decoration: none;cursor: pointer;}
+         </style>
+  </head>
+  <body>
+             <center><h1>404</h1></center>
+
+             <section class="page_404">
+
+             <div class="container">
+             <div class="row">
+             <div class="col-sm-12">
+             <div class="col-sm-10 col-sm-offset-1 text-center">
+             <div class="four_zero_four_bg">
+             <h1 class="four_zero_four_bg">404</h1></div>
+             <div class="contant_box_404">
+             <h3 class="error-404">Looks like you're lost</h3>
+             <p class="error-404-p">The page you are looking for is not Available</p>
+             <a href="pt.html" class="link_404">go to home</a></div>
+             </div>
+
+            </div>
+          </div>
+        </div>``
+      </div>
+    </section>
+
+    <span id="modal-trigger">
+    </span>
+    <div id="modal" class="modal">
+   <div class="modal-content">
+   <span class="close">&times;</span>
+   <h2></h2>
+   <p>Modal content goes here.</p>
+   </div>
+   </div>
+
+    <script>
+      var modal = document.getElementById("modal");
+      var trigger = document.getElementById("modal-trigger");
+      var closeBtn = document.getElementsByClassName("close")[0];
+      trigger.onmouseover = function() {modal.style.display = "block";}
+      closeBtn.onclick = function() {modal.style.display = "none";}
+      window.onclick = function(event) {if (event.target == modal) { modal.style.display = "none";}}
+    </script>
+  </body>
+</html>
